@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="411.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.brief8.TaController">
+   <children>
+      <Text layoutX="404.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="        TACHES" wrappingWidth="140.5367431640625" />
+      <ImageView fitHeight="434.0" fitWidth="893.0" layoutX="-3.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Desktop/uml/op.png" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="335.0" prefWidth="186.0">
+         <children>
+            <Label fx:id="titre" prefHeight="18.0" prefWidth="103.0" text="titre:" textFill="#f2eeee">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="description" prefHeight="18.0" prefWidth="177.0" text="description:" textFill="#faf4f4">
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="status" prefHeight="18.0" prefWidth="106.0" text="status:" textFill="#fcfafa">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="nom_categorie" prefHeight="31.0" prefWidth="160.0" text="nom_categorie:" textFill="#f4f1f1">
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox layoutX="184.0" layoutY="329.0" prefHeight="77.0" prefWidth="626.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Ajouter" prefHeight="26.0" prefWidth="162.0" text="Ajouter">
+               <HBox.margin>
+                  <Insets bottom="17.0" left="17.0" right="17.0" top="17.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnSupprimer" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#Supprimer" prefHeight="26.0" prefWidth="137.0" text="Supprimer">
+               <HBox.margin>
+                  <Insets bottom="17.0" left="17.0" right="17.0" top="17.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnModifier" layoutX="62.0" layoutY="10.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="26.0" prefWidth="148.0" text="Modifier">
+               <HBox.margin>
+                  <Insets bottom="17.0" left="17.0" right="17.0" top="17.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+               </padding>
+            </Button>
+         </children>
+      </HBox>
+      <VBox layoutX="464.0" layoutY="-4.0" prefHeight="260.0" prefWidth="401.0">
+         <children>
+            <TableView fx:id="tableauT" prefHeight="261.0" prefWidth="391.0">
+              <columns>
+                <TableColumn fx:id="titreTa" prefWidth="71.20001220703125" text="titre" />
+                <TableColumn fx:id="descriptionTa" prefWidth="72.800048828125" text="description" />
+                  <TableColumn fx:id="statusTa" prefWidth="79.99993896484375" text="status" />
+                  <TableColumn fx:id="nom_categorieTa" prefWidth="76.800048828125" text="nom_categorie" />
+                  <TableColumn fx:id="deadlineTa" prefWidth="249.5999755859375" text="deadline" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

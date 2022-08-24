@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="700.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.brief8.LoginController">
+   <children>
+      <HBox layoutX="183.0" layoutY="361.0" prefHeight="98.0" prefWidth="255.0" />
+     
+      <HBox layoutX="40.0" layoutY="302.0" prefHeight="66.0" prefWidth="156.0" />
+      <ImageView fitHeight="434.0" fitWidth="622.0" layoutX="-3.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Desktop/uml/jpeg.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="nom_utilisateur" layoutX="-2.0" layoutY="31.0" prefHeight="385.0" prefWidth="534.0">
+         <children>
+            <HBox layoutX="57.0" layoutY="278.0" prefHeight="73.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="inscrire" mnemonicParsing="false" onAction="#btninscrire" prefHeight="26.0" prefWidth="161.0" text="S'inscrire" textFill="#0cdf1d">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <VBox layoutX="21.0" layoutY="29.0" prefHeight="144.0" prefWidth="214.0">
+               <children>
+                  <Label fx:id="txtnom_utilisateur" prefHeight="35.0" prefWidth="210.0" text="nom_utilisateur">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="motpass" prefHeight="18.0" prefWidth="105.0" text="motpass">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="252.0" layoutY="41.0" prefHeight="116.0" prefWidth="265.0">
+               <children>
+                  <TextField fx:id="txtUtilisateur" prefHeight="26.0" prefWidth="314.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="txtmotpass">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+            </VBox>
+            <HBox layoutX="250.0" layoutY="264.0" prefHeight="117.0" prefWidth="207.0">
+               <children>
+                  <Button fx:id="Connexion" mnemonicParsing="false" onAction="#btnConnexion" prefHeight="56.0" prefWidth="167.0" text="Connexion" textFill="#0cdf1d">
+                     <HBox.margin>
+                        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
